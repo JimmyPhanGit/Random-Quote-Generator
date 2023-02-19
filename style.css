@@ -35,6 +35,7 @@
     font-family: 'Work Sans';
     font-size: 32px;
     font-weight: 200;
+    text-decoration: none;
 }
 
 .logo_container h1 span{
@@ -42,6 +43,7 @@
     font-weight: 800;
     font-size: 38px;
     vertical-align: middle;
+    text-decoration: none;
 }
 
 .logo_container a{
@@ -72,4 +74,124 @@
     color: white;
     font-family: 'Work sans';
     font-size: 16px;
+}
+
+/** Random Quote Generator CSS */
+
+.quote_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #57C2E4;
+}
+
+.wrapper{
+    width: 600px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    color: black;
+}
+
+.quote_header{
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.wrapper .content{
+    margin: 35px 0;
+}
+
+.wrapper .quote-area{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 15px;
+}
+
+.quote-area i:first-child{
+    margin: 3px 10px 0;
+}
+
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+
+.quote-area .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+}
+
+.wrapper .buttons{
+    border-top: 1px solid black;
+}
+
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    border: 2px solid #57C2E4;
+    border-radius: 50%;
+    display: flex;
+    color: #57C2E4;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.features ul li:hover{
+    color: #fff;
+    background: #57C2E4;
+    transform: rotate(360deg);
+}
+
+.features button:hover{
+    color: #fff;
+    background: #57C2E4;
+}
+.features button{
+    border: none;
+    outline: none;
+    padding: 13px 22px;
+    font-style: 16px;
+    border-radius: 30px;
+    background: #57C2E4;
+    cursor: pointer;
+    color: black;
+}
+
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
 }
