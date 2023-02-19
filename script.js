@@ -33,7 +33,7 @@ copyBtn.addEventListener("click", ()=>{
 });
 
 twitterBtn.addEventListener("click", ()=>{
-    let tweetUrl = 'https://twitter.com/intent/tweet?url=${quoteText.innerText}';
+    let tweetUrl = 'https://twitter.com/intent/tweet?url=quoteText.innerText';
     window.open(tweetUrl, "_blank"); //opens a new twitter tab with quote ready to go
 });
 
